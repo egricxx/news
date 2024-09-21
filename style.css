@@ -1,0 +1,184 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #444444;
+    width: 940px;
+    height: 530px;
+}
+
+.weather-container {
+    width: 940px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: #f0f0f0;
+}
+
+.background-image {
+    position: relative;
+    background-image: url("../news/images/fon.png");
+
+    width: 940px;
+    height: 340px;
+    background-size: cover;
+    background-position: bottom;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+
+}
+
+
+
+
+.location-info h1{
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    z-index: 10;
+    color: white;
+    font-size: 28px;
+    font-family: Cambria;
+}
+
+.upper {
+    justify-content: flex-start;
+
+}
+
+
+
+.info-links p{
+    display: inline-block;
+    text-align: center;
+    color: white;
+    font-size: 22px;
+    padding-left: 5px;
+    margin-right: 40px;
+    position: relative;
+    padding-bottom: 5px;
+}
+
+.info-links img {
+    margin-left: 14px;
+}
+
+
+.info-links p::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: -40px;
+    width: calc(100% + 80px);
+    height: 5px;
+    background-color: red;
+}
+
+
+.info-links .weather::after {
+    background-color: red;
+}
+
+.info-links .news::after {
+    background-color: green;
+}
+
+.info-links .gallery::after {
+    background-color: darkcyan;
+}
+
+footer {
+    width: 940px;
+    height: 190px;
+}
+
+.current-weather {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #fff;
+    color: #949fab;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.current-weather p {
+    text-align: center;
+    background-color: #efefef;
+    color: #949fab;
+    border-radius: 10px;
+}
+
+
+
+.temp h1{
+    font-size: 5rem;
+    font-weight: bold;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 2fr 5fr;
+    width: 940px;
+    height: 190px;
+
+}
+
+.weather-desc p {
+    padding: 8px;
+    border-radius: 10px;
+    color: #949fab;
+}
+
+.weather-desc img{
+    width: 100%;
+}
+
+.week-forecast {
+    display: flex;
+    justify-content: space-between;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.week-forecast h1 {
+    text-align: center;
+    background-color: #efefef;
+    color: #949fab;
+    padding: 5px;
+    border-radius: 10px;
+    font-size: 15px;
+    margin: 15px;
+}
+
+.week-forecast p {
+
+    font-size: 2rem;
+    font-weight: bold;
+    color: #949fab;
+    margin: 15px;
+}
+
+
+.day {
+
+    border-left: 0.2px solid #444;
+    padding-left: 18px;
+    text-align: center;
+    font-size: 20px;
+}
+
+
+.day img {
+    width: 40px;
+    height: 40px;
+}
+
+
+
+
